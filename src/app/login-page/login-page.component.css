@@ -1,0 +1,20 @@
+.main-div{
+    margin-top: 100px;
+    width: 40%;
+    background: rgba(128, 128, 128, 0.834);
+}
+
+.newAcc{
+    text-decoration: none;
+    color: white;
+}
+.newAcc:hover{
+    color: black;
+}
+
+@media(max-width: 700px){
+     .main-div{
+        width: 90%;
+        margin-top: 10px;
+     }
+}
