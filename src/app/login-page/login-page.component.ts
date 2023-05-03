@@ -9,17 +9,20 @@ export class LoginPageComponent implements OnInit {
   bankName="City Bank"
   data="Your Perfect Banking Partner"
   placeHolderData="Enter User ID"
+  uname:any
+  psw:any
   constructor(){}
   ngOnInit(): void {
     
   }
 
-  login(){
+  login(a:any,b:any){
+    this.uname=a.value
+    this.psw=b.value
+    console.log(this.uname, this.psw);
+    
     alert("login clicked")
   }
 
-  unameChange(event:any){
-      console.log(event.target.value);
-      
-  }
+
 }
